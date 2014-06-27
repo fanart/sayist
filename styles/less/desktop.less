@@ -1,0 +1,29 @@
+/*
+
+
+============================
+  Syaist/desktop.less
+============================
+*/
+
+
+.container {
+	//width: 100%;
+	
+	@media (max-width:@phone) {
+		width: @container-phone;
+	}
+	@media (min-width:@mini-tablet) {
+		width: @container-mini-tablet;	
+	}
+	@media (min-width:@tablet) {
+		width: @container-tablet;
+		//margin-left: ((@screen-sm - @container-tablet) / 2);
+	}
+	@media (min-width:@desktop) {
+		width: @container-desktop;		
+		//margin-left: ((@screen-md - @container-desktop) / 2);
+	}
+}
+
+

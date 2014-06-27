@@ -1,0 +1,49 @@
+/*
+==============================
+	Sayist/components.less 
+==============================
+*/
+
+/*icons comp*/
+.icons {
+	position: relative;
+	min-height: 120px;
+	background-color: #e7eff2;
+	
+	.border-lightgray {
+		border-color: #dde2e4;
+	}
+}
+
+/*sign in modal*/
+#sign-in-modal {
+	color: @gray-darker;
+	a.btn {
+		color: #fff;
+	}
+	
+	.modal-dialog.modal-signin {
+		@media (min-width:@desktop) {
+			width: 790px;
+		}
+		.modal-header, .modal-footer {
+			border: none;
+			border: 0;
+			
+				a:link, a:visited, a:hover, a:active {
+					color: @brand-sucess;
+				}
+		}
+		.modal-body {
+			height: 230px;
+			.password {
+				a:link, a:visited, a:active {
+					text-decoration: underline;
+				}
+				a:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+/*
+==============================
+	Sayist/header.less 
+==============================
+*/
+
+header {
+	position: relative;
+	min-height: 75px;
+	z-index: 100;
+	
+	.menu-humburger > img {
+		cursor: pointer;
+	}
+	
+	nav {
+		@media (min-width:@mini-tablet) {
+			position: relative;
+			display: block !important;
+		}
+		
+		@media (max-width:@phone) {
+			display: none;
+			position: absolute !important;
+			top: 75px;	
+			ul {
+				padding-bottom: 0;
+				> li {
+					background-color: #fff;
+					border-bottom: 1px solid @gray;
+					height: 50px;
+					line-height: 50px;
+				}
+			}
+		}
+	}
+}
+
+//"sign in modal LESS is coded in "components.less"
